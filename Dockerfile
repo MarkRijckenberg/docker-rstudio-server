@@ -15,7 +15,7 @@ ENV LANG en_US.UTF-8
 ## Symlink pandoc, pandoc-citeproc so they are available system-wide
 RUN rm -rf /var/lib/apt/lists/ \
   && apt-get update \
-  && apt-get install -t unstable -y --no-install-recommends \
+  && apt-get install -y --no-install-recommends \
   r-base  \
   r-base-dev \
   gdebi-core \
