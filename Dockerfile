@@ -48,32 +48,28 @@ RUN rm -rf /var/lib/apt/lists/ \
   && ln -s /usr/lib/rstudio-server/bin/pandoc/pandoc-citeproc /usr/local/bin \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
-  
-  # install additional R packages
-  RUN R -e "install.packages('devtools', repos='http://cran.rstudio.com/')"
-  RUN R -e "devtools::install_github('daattali/shinyjs')"
-  RUN R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"
+
 
 ## A default user system configuration. For historical reasons,
 ## we want user to be 'rstudio', but it is 'docker' in r-base
-RUN usermod -l rstudio docker \
-  && usermod -m -d /home/rstudio rstudio \
-  && groupmod -n rstudio docker \
-  && git config --system user.name rstudio \
-  && git config --system user.email rstudio@example.com \
-  && git config --system push.default simple \
-  && echo '"\e[5~": history-search-backward' >> /etc/inputrc \
-  && echo '"\e[6~": history-search-backward' >> /etc/inputrc \
-  && echo "rstudio:rstudio" | chpasswd
+#RUN usermod -l rstudio docker \
+#  && usermod -m -d /home/rstudio rstudio \
+#  && groupmod -n rstudio docker \
+#  && git config --system user.name rstudio \
+#  && git config --system user.email rstudio@example.com \
+#  && git config --system push.default simple \
+#  && echo '"\e[5~": history-search-backward' >> /etc/inputrc \
+#  && echo '"\e[6~": history-search-backward' >> /etc/inputrc \
+#  && echo "rstudio:rstudio" | chpasswd
 
 ## User config and supervisord for persistant RStudio session
-COPY userconf.sh /usr/bin/userconf.sh
-COPY add-students.sh /usr/local/bin/add-students
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+#COPY userconf.sh /usr/bin/userconf.sh
+#COPY add-students.sh /usr/local/bin/add-students
+#COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN mkdir -p /var/log/supervisor \
   && chgrp staff /var/log/supervisor \
   && chmod g+w /var/log/supervisor \
-  && chgrp staff /etc/supervisor/conf.d/supervisord.conf
+  && chgrp staff /etc/supervisor/supervisord.conf
 EXPOSE 8787
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
