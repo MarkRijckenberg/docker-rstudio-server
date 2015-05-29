@@ -1,1 +1,1 @@
-docker build --rm=true -t $USER/rstudio .
+sudo docker build --rm=true -t root/rstudio .
