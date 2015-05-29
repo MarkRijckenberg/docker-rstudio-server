@@ -13,6 +13,7 @@ ENV LANG en_US.UTF-8
 ##########################################################################################################
 # add base PPA repositories
 ##########################################################################################################
+RUN apt-get update && apt-get -y --no-install-recommends software-properties-common
 RUN sudo DEBIAN_FRONTEND=noninteractive add-apt-repository --yes ppa:marutter/rrutter
 RUN sudo DEBIAN_FRONTEND=noninteractive add-apt-repository --yes ppa:marutter/c2d4u
 
