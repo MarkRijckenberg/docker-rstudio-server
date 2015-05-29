@@ -72,7 +72,7 @@ RUN mkdir -p /var/log/supervisor \
   && chgrp staff /etc/supervisor/supervisord.conf
 EXPOSE 8787
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/supervisord"]
 
 # Use Ubuntu 14.04 init system.
 CMD ["/sbin/init"]
