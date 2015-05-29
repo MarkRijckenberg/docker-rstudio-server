@@ -73,3 +73,6 @@ RUN mkdir -p /var/log/supervisor \
 EXPOSE 8787
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+
+# Use Ubuntu 14.04 init system.
+CMD ["/sbin/init"]
