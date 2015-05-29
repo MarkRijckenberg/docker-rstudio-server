@@ -1,1 +1,1 @@
-docker build --rm=true -t $USER/rstudio .
+docker build --rm=true -t localhost/latest .
