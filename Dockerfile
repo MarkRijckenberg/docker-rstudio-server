@@ -48,7 +48,10 @@ RUN rm -rf /var/lib/apt/lists/ \
   && ln -s /usr/lib/rstudio-server/bin/pandoc/pandoc-citeproc /usr/local/bin \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/
-
+  
+  # install additional R packages
+  RUN R -e "install.packages('devtools', repos='http://cran.rstudio.com/')"
+  RUN R -e "devtools::install_github('daattali/shinyjs')"
 
 ## A default user system configuration. For historical reasons,
 ## we want user to be 'rstudio', but it is 'docker' in r-base
