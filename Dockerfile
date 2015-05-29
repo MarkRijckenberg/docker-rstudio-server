@@ -52,6 +52,7 @@ RUN rm -rf /var/lib/apt/lists/ \
   # install additional R packages
   RUN R -e "install.packages('devtools', repos='http://cran.rstudio.com/')"
   RUN R -e "devtools::install_github('daattali/shinyjs')"
+  RUN R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"
 
 ## A default user system configuration. For historical reasons,
 ## we want user to be 'rstudio', but it is 'docker' in r-base
