@@ -3,8 +3,7 @@ include wget
 # Change these if the version changes
 # See http://www.rstudio.com/ide/download/server
 # This is the standard installation (update it when a new release comes out)
-VER=$(wget --no-check-certificate -qO- https://s3.amazonaws.com/rstudio-server/current.ver)
-$rstudioserver = 'rstudio-server-$VER-amd64.deb'
+$rstudioserver = 'rstudio-server-0.99.441-amd64.deb'
 $urlrstudio = 'http://download2.rstudio.org/'
 
 # See http://www.rstudio.com/shiny/server/install-opensource
