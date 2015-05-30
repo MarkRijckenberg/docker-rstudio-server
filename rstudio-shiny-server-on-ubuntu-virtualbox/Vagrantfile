@@ -7,6 +7,7 @@
 # Shared folder to use in RStudio Server in guest operating system is /vagrant which is linked to host
 # operating system folder containing this Vagrantfile
 
+# following is based on http://nicercode.github.io/blog/2013-04-05-projects/
 # proposed directory structure to put in same directory as Vagrantfile
 # projectname/
 # ├── R-functions/
