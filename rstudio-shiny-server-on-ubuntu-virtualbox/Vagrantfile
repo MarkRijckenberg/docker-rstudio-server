@@ -6,6 +6,8 @@
 # vagrant 1.7.2 or newer (https://www.vagrantup.com/downloads.html)
 # Virtualbox 4.3.28 or newer (with shared folder support enabled) (http://dlc-cdn.sun.com/virtualbox/4.3.28/index.html)
 
+# Guest operating system is Ubuntu 14.04 LTS 64-bit (codename trusty)
+
 # Shared directory to use in RStudio Server in guest operating system is /vagrant which is linked to host
 # operating system folder containing this Vagrantfile
 
