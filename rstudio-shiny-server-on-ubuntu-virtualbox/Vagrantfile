@@ -1,6 +1,7 @@
 # -*- mode: ruby -*-
 # Prerequisites for host operating system:
 # Ubuntu 14.04 LTS or newer
+# curl (http://www.confusedbycode.com/curl/)
 # git (https://git-scm.com/download/)
 # vagrant 1.7.2 or newer
 # Virtualbox 4.3.28 or newer (with shared folder support enabled)
