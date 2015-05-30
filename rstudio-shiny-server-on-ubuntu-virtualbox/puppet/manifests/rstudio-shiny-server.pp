@@ -55,7 +55,7 @@ class update_system {
               'pandoc','r-cran-rmarkdown','r-cran-knitr',
               'texlive-latex-extra', 'texlive-bibtex-extra', 'latex-xcolor','biber',
               'texlive-fonts-recommended','texlive-binaries','texlive-latex-base',
-              'texlive-publishers','latex-xcolor']:
+              'texlive-publishers']:
       ensure  => present,
     }
     ->
