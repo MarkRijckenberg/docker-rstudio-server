@@ -35,7 +35,9 @@ class update_system {
       command  =>
       'add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/";
       apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9;
-      add-apt-repository ppa:opencpu/opencpu-1.4;'
+      add-apt-repository ppa:opencpu/opencpu-1.4;
+      add-apt-repository ppa:marutter/rrutter;
+      add-apt-repository ppa:marutter/c2d4u;'
     }
     -> 
     exec {'apt_update':
@@ -49,7 +51,8 @@ class update_system {
               'python-software-properties', 
               'upstart', 'psmisc',
               'python', 'g++', 'make','vim', 'whois','mc','libcairo2-dev',
-              'default-jdk', 'gdebi-core', 'libcurl4-gnutls-dev','libxml2-dev']:
+              'default-jdk', 'gdebi-core', 'libcurl4-gnutls-dev','libxml2-dev',
+              'pandoc','r-cran-rmarkdown','r-cran-knitr']:
       ensure  => present,
     }
     ->
