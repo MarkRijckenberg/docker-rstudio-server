@@ -52,8 +52,8 @@ class update_system {
               'upstart', 'psmisc',
               'python', 'g++', 'make','vim', 'whois','mc','libcairo2-dev',
               'default-jdk', 'gdebi-core', 'libcurl4-gnutls-dev','libxml2-dev',
-              'pandoc','r-cran-rmarkdown','r-cran-knitr'
-              'texlive-latex-extra', 'texlive-bibtex-extra', 'latex-xcolor','biber'
+              'pandoc','r-cran-rmarkdown','r-cran-knitr',
+              'texlive-latex-extra', 'texlive-bibtex-extra', 'latex-xcolor','biber',
               'texlive-fonts-recommended','texlive-binaries','texlive-latex-base',
               'texlive-publishers','texlive-latex-extra']:
       ensure  => present,
