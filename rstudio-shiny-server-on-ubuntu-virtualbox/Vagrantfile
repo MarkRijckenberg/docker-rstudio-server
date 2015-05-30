@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # Prerequisites for host operating system:
 # Ubuntu 14.04 LTS or newer
-# Virtualbox 4.3.28 or newer (with shared folder support)
+# Virtualbox 4.3.28 or newer (with shared folder support enabled)
 # vagrant 1.7.2 or newer
 
 # Shared folder to use in RStudio Server in guest operating system is /vagrant which is linked to host
