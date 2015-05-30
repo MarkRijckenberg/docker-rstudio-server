@@ -3,8 +3,19 @@
 # Ubuntu 14.04 LTS or newer
 # Virtualbox 4.3.28 or newer (with shared folder support)
 # vagrant 1.7.2 or newer
+
 # Shared folder to use in RStudio Server in guest operating system is /vagrant which is linked to host
-# operating system folder containing this Vagrantfile   file.
+# operating system folder containing this Vagrantfile
+
+# proposed directory structure to put in same directory as Vagrantfile
+# projectname/
+# ├── R-functions/
+# ├── R-utilities/
+# ├── read-only-input-data/
+# ├── latex-docs/
+# ├── generated-figures/
+# ├── processed-output/
+# └── analysis.R
 
 # vi: set ft=ruby :
 
