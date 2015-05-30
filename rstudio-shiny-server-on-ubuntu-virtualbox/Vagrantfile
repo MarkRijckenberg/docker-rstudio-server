@@ -17,6 +17,7 @@
 # ├── generated-figures/
 # ├── processed-output/
 # ├── templates/
+# ├── ShinyApps/
 # └── analysis.R
 
 # vi: set ft=ruby :
