@@ -3,7 +3,7 @@
 # Ubuntu 14.04 LTS or newer
 # curl (http://www.confusedbycode.com/curl/)
 # git (https://git-scm.com/download/)
-# vagrant 1.7.2 or newer
+# vagrant 1.7.2 or newer (https://www.vagrantup.com/downloads.html)
 # Virtualbox 4.3.28 or newer (with shared folder support enabled)
 
 # Shared directory to use in RStudio Server in guest operating system is /vagrant which is linked to host
