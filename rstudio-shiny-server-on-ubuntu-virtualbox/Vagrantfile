@@ -12,10 +12,11 @@
 # projectname/
 # ├── R-functions/
 # ├── R-utilities/
-# ├── read-only-input-data/
-# ├── latex-docs/
+# ├── input-data-READ-ONLY/
+# ├── latex-documents/
 # ├── generated-figures/
 # ├── processed-output/
+# ├── templates/
 # └── analysis.R
 
 # vi: set ft=ruby :
