@@ -9,7 +9,8 @@
 
 # following is based on http://nicercode.github.io/blog/2013-04-05-projects/
 # proposed directory structure to put in same directory as Vagrantfile
-# projectname/
+
+# Projectname/
 # ├── R-functions/
 # ├── R-utilities/
 # ├── input-data-READ-ONLY/
