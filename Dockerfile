@@ -73,8 +73,4 @@ RUN mkdir -p /var/log/supervisor \
   && chgrp staff /etc/supervisor/supervisord.conf
 EXPOSE 8787
 
-#CMD ["/usr/bin/supervisord"]
-
-# Use Ubuntu 14.04 init system.
-#CMD ["/sbin/init"]
-CMD ["/bin/bash"]
+CMD ["/usr/bin/supervisord"]
