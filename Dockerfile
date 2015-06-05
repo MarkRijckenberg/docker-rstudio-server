@@ -1,4 +1,5 @@
-# PREREQUISITES: Ubuntu 14.04 LTS
+# PREREQUISITES: Ubuntu 14.04 LTS as host operating system is highly recommended
+# docker 1.6.2 or newer (http://www.ubuntuupdates.org/ppa/docker)
 # Based on:  https://github.com/rocker-org/rocker/blob/master/rstudio/Dockerfile
 # FROM r-base:latest
 ## Start with the official Ubuntu 14.04 LTS image:
